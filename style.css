@@ -735,6 +735,24 @@ object {
   font-weight: bold; }
 
 /* All Archives Page */
+.browse-archives ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .browse-archives ul li {
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.2em; }
+
+.browse-archives .wp-tag-cloud li .tag-cloud-link {
+  font-size: 20px; }
+
 /* Submit a Quote Page */
 .logo {
   margin-top: 2em;
