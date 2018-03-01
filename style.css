@@ -679,22 +679,24 @@ main {
     margin-right: auto; } }
 
 @media (min-width: 1080px) {
-  .entry-content::before {
+  .site-content::before {
     content: '\f10d';
     font-family: FontAwesome;
     position: absolute;
     left: 130px;
     color: #00cc00;
-    font-size: 3.5em; } }
+    font-size: 8em;
+    top: 240px; } }
 
 @media (min-width: 1080px) {
-  .entry-content::after {
+  .site-content::after {
     content: '\f10e';
     font-family: FontAwesome;
     position: absolute;
     right: 130px;
     color: #00cc00;
-    font-size: 3.5em; } }
+    font-size: 8em;
+    top: 240px; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -724,12 +726,6 @@ object {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px; }
-  @media (min-width: 1080px) {
-    .page-template-default .entry-content::before {
-      top: 235px; } }
-  @media (min-width: 1080px) {
-    .page-template-default .entry-content::after {
-      top: 235px; } }
 
 .page-template-default .site-main {
   margin-top: 50px; }

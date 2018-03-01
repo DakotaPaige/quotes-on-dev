@@ -12,16 +12,6 @@
       margin-bottom: 10px;
       font-size: 16px;
     }
-    &::before {
-      @include desktop {
-        top: 235px;
-      }
-    }
-    &::after {
-      @include desktop {
-        top: 235px;
-      }
-    }
   }
 
   .site-main {

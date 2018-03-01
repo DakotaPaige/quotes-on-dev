@@ -109,7 +109,7 @@ main {
 	}
 }
 
-.entry-content {
+.site-content {
 	&::before {
 		@include desktop {
 			content: '\f10d';
@@ -117,7 +117,8 @@ main {
 			position: absolute;
 			left: 130px;
 			color: $color__green-brand;
-			font-size: 3.5em;
+			font-size: 8em;
+			top: 240px;
 		}
 	}
 	&::after {
@@ -127,7 +128,8 @@ main {
 			position: absolute;
 			right: 130px;
 			color: $color__green-brand;
-			font-size: 3.5em;
+			font-size: 8em;
+			top: 240px;
 		}
 	}
 }
