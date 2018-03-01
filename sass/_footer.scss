@@ -21,6 +21,7 @@
 
 .site-info {
   font-weight: 300;
+  margin-bottom: 50px;
   @include tablet {
     display: flex;
     justify-content: flex-start;

@@ -40,10 +40,37 @@
       font-size: 1.2em;
     }
   }
-  .wp-tag-cloud li .tag-cloud-link {
-    font-size: 20px;
-  }
 }
 
 
 /* Submit a Quote Page */
+
+#quote-submission-form {
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    label {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    input, textarea {
+      background-color: $color__background-body;
+      border: 2px solid $color__green-brand;
+      border-radius: 3px;
+    }
+  }
+  input[type="submit"] {
+    background-color: $color__background-body;
+    box-shadow: none;
+    text-shadow: none;
+    border: 2px solid $color__green-brand;
+    color: $color__green-brand;
+    font-size: 1em;
+    padding: 10px 25px;
+    &:hover {
+      color: darken($color__green-brand, 10%);
+      border-color: darken($color__green-brand, 10%);
+    }
+  }
+}
