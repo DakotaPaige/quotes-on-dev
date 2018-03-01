@@ -763,7 +763,15 @@ object {
   #quote-submission-form div label {
     padding-top: 8px;
     padding-bottom: 8px; }
-  #quote-submission-form div input, #quote-submission-form div textarea {
+  #quote-submission-form div input {
+    background-color: #222222;
+    border: 2px solid #00cc00;
+    border-radius: 3px;
+    width: 250px; }
+    @media (min-width: 620px) {
+      #quote-submission-form div input {
+        width: 450px; } }
+  #quote-submission-form div textarea {
     background-color: #222222;
     border: 2px solid #00cc00;
     border-radius: 3px; }

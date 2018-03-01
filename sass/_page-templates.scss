@@ -54,7 +54,16 @@
       padding-top: 8px;
       padding-bottom: 8px;
     }
-    input, textarea {
+    input{
+      background-color: $color__background-body;
+      border: 2px solid $color__green-brand;
+      border-radius: 3px;
+      width: 250px;
+      @include tablet {
+        width: 450px;
+      }
+    }
+    textarea {
       background-color: $color__background-body;
       border: 2px solid $color__green-brand;
       border-radius: 3px;
