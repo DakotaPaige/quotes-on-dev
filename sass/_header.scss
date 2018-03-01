@@ -1,7 +1,19 @@
 .logo {
-  text-align: center;
   margin-top: 2em;
+  margin-bottom: 1em;
+  @include tablet {
+    margin-bottom: 0;
+  }
+  @include desktop {
+    text-align: center;
+  }
   img {
-    width: 700px;
+    width: 300px;
+    @include tablet {
+      width: 500px;
+    }
+    @include desktop {
+      width: 700px;
+    }
   }
 }

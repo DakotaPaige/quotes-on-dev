@@ -33,7 +33,101 @@
 }
 
 .site {
-	width: 1080px;
+	width: auto;
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#new-quote-button {
+	background: transparent;
+	border: 2px solid $color__green-brand;
+	box-shadow: none;
+	text-shadow: none;
+	color: $color__green-brand;
+	font-size: 1em;
+	padding: 10px 20px;
+	margin-top: 20px;
+	&:hover {
+		color: $color__link-hover;
+		border-color: $color__link-hover;
+	}
+	@include tablet {
+		font-size: 1.3em;
+	}
+	@include desktop {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+main {
+	margin-bottom: 70px;
+	@include desktop {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-bottom: 100px;
+	}
+}
+
+.entry-meta {
+	display: flex;
+	@include desktop {
+		font-size: 1.1em;
+	}
+}
+
+.entry-title {
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.2em;
+}
+
+.source {
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+.entry-content {
+	font-size: 1.2em;
+	@include tablet {
+		font-size: 1.8em;
+	}
+	@include desktop {
+		font-size: 2.2em;
+		display: flex;
+	}
+}
+
+.content-area {
+	@include desktop {
+		width: 700px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.entry-content {
+	&::before {
+		@include desktop {
+			content: '\f10d';
+			font-family: FontAwesome;
+			position: absolute;
+			left: 130px;
+			color: $color__green-brand;
+			font-size: 3.5em;
+		}
+	}
+	&::after {
+		@include desktop {
+			content: '\f10e';
+			font-family: FontAwesome;
+			position: absolute;
+			right: 130px;
+			color: $color__green-brand;
+			font-size: 3.5em;
+		}
+	}
 }

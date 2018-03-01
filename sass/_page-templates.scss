@@ -1,6 +1,24 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* About Page */
+
+.page-template-default {
+  .entry-content {
+    margin: 0;
+    display: block;
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+  }
+
+  .site-main {
+    margin-top: 50px;
+  }
+}
+
 
 /* All Archives Page */
 
