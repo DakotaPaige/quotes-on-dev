@@ -724,9 +724,19 @@ object {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 16px; }
+  @media (min-width: 1080px) {
+    .page-template-default .entry-content::before {
+      top: 235px; } }
+  @media (min-width: 1080px) {
+    .page-template-default .entry-content::after {
+      top: 235px; } }
 
 .page-template-default .site-main {
   margin-top: 50px; }
+
+.page-template-default .entry-title {
+  font-size: 1.5em;
+  font-weight: bold; }
 
 /* All Archives Page */
 /* Submit a Quote Page */

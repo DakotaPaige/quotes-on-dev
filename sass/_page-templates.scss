@@ -12,10 +12,24 @@
       margin-bottom: 10px;
       font-size: 16px;
     }
+    &::before {
+      @include desktop {
+        top: 235px;
+      }
+    }
+    &::after {
+      @include desktop {
+        top: 235px;
+      }
+    }
   }
 
   .site-main {
     margin-top: 50px;
+  }
+  .entry-title {
+    font-size: 1.5em;
+    font-weight: bold;
   }
 }
 
