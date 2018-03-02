@@ -750,6 +750,21 @@ object {
     padding-bottom: 5px;
     font-size: 1.2em; }
 
+.archive .page-header {
+  margin-top: 35px;
+  border-bottom: 1px dotted #ffffff; }
+
+.archive .entry-content {
+  margin: 0; }
+
+.archive article {
+  border-bottom: 1px dotted #ffffff;
+  margin: 0;
+  padding-bottom: 2rem; }
+
+.archive .number-pagination {
+  margin-top: 2em; }
+
 /* Submit a Quote Page */
 #quote-submission-form div {
   display: -webkit-box;

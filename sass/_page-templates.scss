@@ -42,6 +42,24 @@
   }
 }
 
+.archive {
+  .page-header {
+    margin-top: 35px;
+    border-bottom: $dashed-border;
+  }
+  .entry-content {
+    margin: 0;
+  }
+  article {
+    border-bottom: $dashed-border;
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+  .number-pagination {
+    margin-top: 2em;
+  }
+}
+
 
 /* Submit a Quote Page */
 
