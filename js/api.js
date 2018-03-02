@@ -16,21 +16,25 @@
         $( '.entry-title' ).html( '&mdash; ' + post.title.rendered );
 
         //if the source is available, output it, else output an empty string to fill it
-        if ( typeof post._qod_quote_source !== 'undefined') {
+        if ( post._qod_quote_source !== '' && post._qod_quote_source_url !== '') {
           $( '.source' ).html(', <a href="' + post._qod_quote_source_url + '">' + post._qod_quote_source + '</a>');
-        } else {
+        } 
+        else if (post._qod_quote_source !== '') {
+          $('.source').text(', ' + post._qod_quote_source)
+        }
+        else {
           $( '.source' ).text('');
         }
 
-    
+        //history api to push post on the end of the url slug
+
+        // var stateObj = '';
+        // history.replaceState(stateObj, 'post page', post.link);
 
       }
     })
   })
 
-
-
-  //history api to push post on the end of the url slug
 
   //submit a new quote with the form using ajax
 
