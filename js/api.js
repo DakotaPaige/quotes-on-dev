@@ -1,6 +1,6 @@
 (function($) {
 
-  //fetch a random quote post
+  //fetch a random quote post when the new quote button is clicked
   $('#new-quote-button').on('click', function(event) {
     event.preventDefault();
 
@@ -10,7 +10,6 @@
 
         //gets just the first post from the array of posts.
         var post = data.shift();
-        console.log(post);
 
         //replace the current quote with the new quote
         $('.entry-content').html( post.content.rendered );
@@ -23,13 +22,10 @@
           $( '.source' ).text('');
         }
 
+    
+
       }
     })
-
-
-
-
-    // $('.site-main article').remove();
   })
 
 

@@ -782,14 +782,22 @@ object {
     background-color: #222222;
     border: 2px solid #00cc00;
     border-radius: 3px;
-    width: 250px; }
+    width: 250px;
+    color: white; }
+    #quote-submission-form div input:focus {
+      outline: 0;
+      border-color: white; }
     @media (min-width: 620px) {
       #quote-submission-form div input {
         width: 450px; } }
   #quote-submission-form div textarea {
     background-color: #222222;
     border: 2px solid #00cc00;
-    border-radius: 3px; }
+    border-radius: 3px;
+    color: white; }
+    #quote-submission-form div textarea:focus {
+      outline: 0;
+      border-color: white; }
 
 #quote-submission-form input[type="submit"] {
   background-color: #222222;

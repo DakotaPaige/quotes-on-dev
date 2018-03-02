@@ -77,6 +77,11 @@
       border: 2px solid $color__green-brand;
       border-radius: 3px;
       width: 250px;
+      color: white;
+      &:focus {
+        outline: 0;
+        border-color: white;
+      }
       @include tablet {
         width: 450px;
       }
@@ -85,6 +90,11 @@
       background-color: $color__background-body;
       border: 2px solid $color__green-brand;
       border-radius: 3px;
+      color: white;
+      &:focus {
+        outline: 0;
+        border-color: white;
+      }
     }
   }
   input[type="submit"] {
