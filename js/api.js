@@ -5,7 +5,7 @@
     event.preventDefault();
 
     $.ajax( {
-      url: 'wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
+      url: '/QuotesOnDev/wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
       success: function( data ) {
 
         //gets just the first post from the array of posts.
@@ -27,10 +27,8 @@
         }
 
         //history api to push post on the end of the url slug
-
-        // var stateObj = '';
-        // history.replaceState(stateObj, 'post page', post.link);
-
+        var stateObj = '';
+        history.replaceState(stateObj, 'post page', post.link);
       }
     })
   })
