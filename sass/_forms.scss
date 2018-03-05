@@ -60,3 +60,41 @@ textarea {
 	padding-left: 3px;
 	width: 100%;
 }
+
+/* Search form on 404 page */
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.search-field {
+	background-color: transparent;
+}
+
+input[type=search] {
+	border: 2px solid $color__green-brand;
+	padding: 5px;
+	font-size: 20px;
+	&:focus {
+		outline: none;
+		border-color: white;
+		color: white;
+	}
+}
+
+.search-submit {
+	background-color: transparent;
+	color: $color__green-brand;
+	box-shadow: none;
+	border: 0;
+	text-shadow: none;
+	font-size: 1.5em;
+	&:hover {
+		color: darken($color__green-brand, 10%);
+		box-shadow: none;
+	}
+}
+
+

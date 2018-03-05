@@ -433,6 +433,37 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+/* Search form on 404 page */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+.search-field {
+  background-color: transparent; }
+
+input[type=search] {
+  border: 2px solid #00cc00;
+  padding: 5px;
+  font-size: 20px; }
+  input[type=search]:focus {
+    outline: none;
+    border-color: white;
+    color: white; }
+
+.search-submit {
+  background-color: transparent;
+  color: #00cc00;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  text-shadow: none;
+  font-size: 1.5em; }
+  .search-submit:hover {
+    color: #009900;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -811,6 +842,10 @@ object {
   #quote-submission-form input[type="submit"]:hover {
     color: #009900;
     border-color: #009900; }
+
+/* Search page */
+.search-results .page-header {
+  border-bottom: 1px dotted #ffffff; }
 
 .logo {
   margin-top: 2em;
