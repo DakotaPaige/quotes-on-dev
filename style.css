@@ -796,6 +796,9 @@ object {
 .archive .number-pagination {
   margin-top: 2em; }
 
+.wp-tag-cloud li a {
+  font-size: 16px; }
+
 /* Submit a Quote Page */
 #quote-submission-form div {
   display: -webkit-box;
@@ -881,6 +884,8 @@ object {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; } }
+  .footer-navigation ul li:first-child a {
+    padding-left: 0; }
   .footer-navigation ul li {
     list-style-type: none; }
     .footer-navigation ul li a {
@@ -909,5 +914,7 @@ object {
       margin-left: auto;
       margin-right: auto; } }
   .site-info p {
-    margin: 0;
-    padding-left: 10px; }
+    margin: 0; }
+    @media (min-width: 620px) {
+      .site-info p {
+        padding-left: 10px; } }

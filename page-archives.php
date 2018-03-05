@@ -42,7 +42,7 @@ get_header(); ?>
               array(
                 'smallest' => 1,
                 'largest' => 1,
-                'unit' => 'rem',
+                'unit' => 'em',
                 'format' => 'list'
               )
             );
