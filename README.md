@@ -1,23 +1,27 @@
-# Quotes on Dev Starter
+# Quotes on Dev
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+![Quotes On Dev Gif](images/quotes-on-dev-gif.gif)
 
-## Installation
+School project to build the functionality for a website called Quotes on Dev (in mock of Quotes On Design) using the Wordpress REST API.
 
-### 1. Download me (don't clone me!)
+## Key Features
 
-Then add me to your `wp-content/themes` directory.
+This website uses javascript for a few key features:
 
-### 2. Rename the `quotesondev-starter-master` directory
+1. Uses Ajax to make a GET request to a WP API endpoint to dynamically add a new quote to the front page when a user clicks the 'Get a new Quote' button, and updates the URL using the history API.
+2. Uses Ajax to make a POST request to submit a new quote to the site, but only when a user is logged in.
+3. Clears the quote submission form and shows a success message when a quote is successfully submitted to the database.
+4. Shows an error message when a quote is not successfully submitted to the database.
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+This website is also responsiveley designed using a mobile-first approach for mobile, tablet and desktop views.
+It also uses Gulp for running build tasks, such as minification and error checking, and uses SASS as a css pre-processor.
 
-### 3. Install the dev dependencies
+## Personal Learnings
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
+1. How to incorporate Javascript into Wordpress by properly enqueue-ing CSS and javascript files in the functions.php file.
+2. How to leverage the WP template hierarchy to edit the correct pages.
+3. How to properly use Ajax and what data to pass in for certain post types. 
 
-### 4. Update the proxy in `gulpfile.js`
+## License
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+[MIT](LICENSE)
